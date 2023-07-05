@@ -1,0 +1,12 @@
+:host {
+  --main-color: #2e2f42;
+  --main-color2: #f6c427;
+  --main-color3: #f6f6f8;
+  --text: #757575;
+  --h2: #3f3f3f;
+  --p:#757575;
+  --projectsh: rgba(255,255,255,0.46);
+  --hover: rgba(0,0,0,0.65);
+  --footertext: rgba(255,255,255,0.7)
+  /*#f59720 contact sec*/
+}

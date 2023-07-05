@@ -1,1 +1,99 @@
-<p>projects works!</p>
+<section class="head-sec">
+  <div class="layer">
+    <div class="container head-sec-content">
+      <h1 class="fw-normal text-white">PROJECTS</h1>
+      <P class="fs-4">WE ARE A TEAM OF HIGHLY SKILLED PROFESSIONALS</P>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <ul class="nav justify-content-center py-5 fs-5">
+    <li class="nav-item active">
+      <a class="nav-link" href="#"><span class="pb-1">All</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span class="pb-1">All</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span class="pb-1">All</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span class="pb-1">All</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><span class="pb-1">All</span></a>
+    </li>
+  </ul>
+  <div class="row my-5">
+    <div class="col-md-4 px-md-2 project-container">
+      <div class="bg-danger position-relative projects-item" role="button" data-bs-toggle="modal" data-bs-target="#projectsModal">
+        <img class="w-100" src="https://149355584.v2.pressablecdn.com/wp-content/uploads/2018/09/home-kitchen-remodel-1024x721.jpg">
+        <div class="position-absolute top-0 end-0 start-0 bottom-0 project-hover">
+          <div class="text-white h-100 position-relative">
+            <div class="position-absolute bottom-0 py-3 project-links">
+              <p class="m-0 fs-3 font-monospace">slide name</p>
+              <p class="fs-6">view project<i class="fa-solid fa-angles-right px-1" [ngClass]="{'fa-angles-right': !rtlDir, 'fa-angles-left': rtlDir}"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 px-md-2 project-container">
+      <div class="bg-danger position-relative projects-item" role="button" data-bs-toggle="modal" data-bs-target="#projectsModal">
+        <img class="w-100" src="https://149355584.v2.pressablecdn.com/wp-content/uploads/2018/09/home-kitchen-remodel-1024x721.jpg">
+        <div class="position-absolute top-0 end-0 start-0 bottom-0 project-hover">
+          <div class="text-white h-100 position-relative">
+            <div class="position-absolute bottom-0 py-3 project-links">
+              <p class="m-0 fs-3 font-monospace">slide name</p>
+              <p class="fs-6">view project<i class="fa-solid fa-angles-right px-1" [ngClass]="{'fa-angles-right': !rtlDir, 'fa-angles-left': rtlDir}"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 px-md-2 project-container">
+      <div class="bg-danger position-relative projects-item" role="button" data-bs-toggle="modal" data-bs-target="#projectsModal">
+        <img class="w-100" src="https://149355584.v2.pressablecdn.com/wp-content/uploads/2018/09/home-kitchen-remodel-1024x721.jpg">
+        <div class="position-absolute top-0 end-0 start-0 bottom-0 project-hover">
+          <div class="text-white h-100 position-relative">
+            <div class="position-absolute bottom-0 py-3 project-links">
+              <p class="m-0 fs-3 font-monospace">slide name</p>
+              <p class="fs-6">view project<i class="fa-solid fa-angles-right px-1" [ngClass]="{'fa-angles-right': !rtlDir, 'fa-angles-left': rtlDir}"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Modal -->
+<div class="modal fade" id="projectsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close position-absolute top-0" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://149355584.v2.pressablecdn.com/wp-content/uploads/2018/09/home-kitchen-remodel-1024x721.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://149355584.v2.pressablecdn.com/wp-content/uploads/2018/09/home-kitchen-remodel-1024x721.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://149355584.v2.pressablecdn.com/wp-content/uploads/2018/09/home-kitchen-remodel-1024x721.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

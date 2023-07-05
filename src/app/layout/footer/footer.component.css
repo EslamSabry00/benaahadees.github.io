@@ -1,0 +1,25 @@
+@import "../../../colors.css";
+footer {
+  background-color: var(--main-color);
+}
+.footer-item a,p {
+  color: var(--footertext);
+}
+.fa-square-facebook {
+  color: #1877f2;
+}
+.fa-square-envelope {
+  color: #c71610;
+}
+.fa-square-whatsapp {
+  color:#25D366 ;
+}
+.contact-sec {
+  background-color: var(--main-color3);
+}
+.contact-sec p{
+  color: var(--hover);
+}
+.projects-btn{
+  background-color: var(--main-color2);
+}

@@ -1,0 +1,80 @@
+@import "../../../colors.css";
+
+.head-sec {
+  background-image: url("https://149355584.v2.pressablecdn.com/wp-content/uploads/2018/09/home-kitchen-remodel-1024x721.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.head-sec-content {
+  padding-top: 150px;
+  padding-bottom: 135px;
+}
+.head-sec-content h1{
+  font-size: 90px;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.15);
+}
+.head-sec-content p {
+  color: rgba(255,255,255,0.85);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.layer {
+  background-color:rgba(242, 190, 10,0.7) ;
+}
+.nav a{
+  color: #25487d;
+}
+.nav-item.active span{
+  border-bottom: 1px solid;
+  color: var(--main-color2);
+}
+.projects-sec {
+  background-color: var(--main-color);
+}
+.projects-head-color {
+  color: var(--projectsh) ;
+}
+.projects-btn{
+  background-color: var(--main-color2);
+}
+.project-hover {
+  background-color: var(--hover);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.projects-item:hover .project-hover{
+  opacity: 1;
+}
+.project-links {
+  transition: padding-right 0.5s ease-in-out,padding-left 0.5s ease-in-out;
+}
+.projects-item:hover .project-links {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.modal-dialog {
+  margin-top: 9.75rem;
+}
+.btn-close {
+  z-index: 999999;
+  top: -4%!important;
+  right: -4%;
+  background-color: #fff !important;
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 1;
+}
+.carousel-control-next,.carousel-control-prev {
+  width: auto;
+}
+.carousel-control-next span, .carousel-control-prev span {
+  background-color: #111;
+}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+  .head-sec-content h1{
+    font-size: 80px;
+    /*text-align: center;*/
+  }
+}

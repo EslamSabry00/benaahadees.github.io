@@ -1,1 +1,42 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid position-relative">
+    <div class="dropdown">
+      <a class="btn btn-secondary bg-transparent " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <span *ngIf="rtlDir== true">AR</span><span *ngIf="rtlDir!= true">EN</span>
+      </a>
+
+      <ul class="dropdown-menu">
+        <li (click)="translate('ar')"><a class="dropdown-item" >ar</a></li>
+        <li (click)="translate('en')"><a class="dropdown-item" >en</a></li>
+      </ul>
+    </div>
+    <a class="navbar-brand">
+      <img class="w-100" src="assets/img/logo.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between m-auto fs-5 text-center">
+        <div class="d-md-flex">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="nav-active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >{{"nav1" | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/services" routerLinkActive="nav-active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >{{"nav2" | translate}}</a>
+          </li>
+        </div>
+        <div class="d-md-flex">
+          <li class="nav-item second-nav">
+            <a class="nav-link" routerLink="/projects" routerLinkActive="nav-active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >{{"nav3" | translate}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="nav-active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >{{"nav4" | translate}}</a>
+          </li>
+        </div>
+
+      </ul>
+    </div>
+    <a class="text-white fs-1 d-none d-md-block"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+</nav>

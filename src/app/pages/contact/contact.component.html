@@ -1,1 +1,72 @@
-<p>contact works!</p>
+<section class="head-sec">
+  <div class="layer">
+    <div class="container head-sec-content">
+      <h1 class="fw-normal text-white">CONTACT US</h1>
+      <P class="fs-4">GOT A QUESTION OR CONCERN? LET'S GET IN TOUCH.</P>
+    </div>
+  </div>
+</section>
+<!--<section>-->
+<!--  <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13822.334720113951!2d31.43418945!3d29.9913924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583d929046ab09%3A0x8e72afa316fb18a!2sTie%20shop%20Arabella%20Plaza!5e0!3m2!1sen!2seg!4v1688383339208!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+<!--</section>-->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-5">
+        <div class="contact-item mb-5">
+          <h2 class="mb-4 fw-normal fs-1">
+            HIRE US TODAY
+          </h2>
+          <P class="fs-5 fw-lighter">
+            NO PROJECT IS TOO SMALL FOR RENOVATION
+          </P>
+        </div>
+        <div>
+          <form class="w-75" (ngSubmit)="sendEmail()" [formGroup]="emailForm">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your Name" formControlName="name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Your E-mail" formControlName="email">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="subject" placeholder="Subject" formControlName="subject">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" formControlName="message"></textarea>
+            </div>
+            <div class="submit-btn">
+              <button type="submit" class="px-4 py-3 email-btn border-0">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-item">
+          <h2 class="mb-4 fw-normal fs-3">
+            NEED HELP?
+          </h2>
+          <P>
+            I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing contact@your-website.com elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </P>
+        </div>
+        <div class="contact-item">
+          <h2 class="mb-4 fw-normal fs-3">
+            24/7 CUSTOMER SUPPORT
+          </h2>
+          <P>
+            I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing contact@your-website.com elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </P>
+        </div>
+        <div class="contact-item">
+          <P class="fs-5 fw-lighter">
+          Feel free to contact us
+          </P>
+          <h2 class="mb-4 fs-2">
+            0131131844553
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

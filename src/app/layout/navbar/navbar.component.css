@@ -1,0 +1,59 @@
+@import "../../../colors.css";
+
+nav {
+  background-color: var(--main-color);
+}
+
+.nav-link {
+  color: rgba(255,255,255,  0.72) !important;
+}
+
+.nav-item {
+  padding: 45px 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-item {
+    padding: 0;
+  }
+  ul {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: unset !important;
+    height: 100px !important;
+    width: 100px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+.navbar-brand {
+  z-index: 999999;
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+  top: 5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*padding: 0 19px 0 0;*/
+}
+ul {
+  width: 60%;
+}
+.dropdown-menu{
+  --bs-dropdown-min-width: 3rem;
+}
+.nav-active {
+  border-bottom: 1px solid var(--main-color2) ;
+}
+ul{
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  ul{
+    width: fit-content;
+  }
+}
