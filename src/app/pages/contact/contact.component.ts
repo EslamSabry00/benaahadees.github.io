@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {DataService} from "../../core/data.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -18,7 +19,7 @@ export class ContactComponent implements OnInit{
       message: ['', Validators.required]
     });
   }
-  constructor(private _dataService: DataService,private formBuilder: FormBuilder) {
+  constructor(private _dataService: DataService,private formBuilder: FormBuilder,private toastr: ToastrService) {
   }
   //---------------variables
   emailForm!: FormGroup;
@@ -51,15 +52,24 @@ export class ContactComponent implements OnInit{
       this._dataService.sendEmail(data).subscribe({
         next: (response) => {
           console.log(response);
-          // this.toastr.success(!this.rtlDir?`Password changed successfully!`:`تم تغيير كلمة المرور بنجاح`);
-          // this.router.navigate(['/home']);
+          if(response.status == '200'){
+            this.toastr.success(!this.rtlDir?`We will contact you soon!`:`سيتم التواصل معك قريبا!`);
+          }else {
+            this.toastr.error(!this.rtlDir?`Please try again`:`من فضلك حاول مرة اخرى` )
+          }
         },
         error : (error)=> {
           console.log(error);
-          // if(error.error.data == 'wrong old password'){
-          //   this.toastr.error(!this.rtlDir?`Wrong old password`:`كلمة المرور الحالية خاطئة` )
+          if(error.status == '200'){
+            this.toastr.success(!this.rtlDir?`We will contact you soon!`:`سيتم التواصل معك قريبا!`);
+          }else {
+            this.toastr.error(!this.rtlDir?`Please try again`:`من فضلك حاول مرة اخرى` )
+          }
+
           }
       })
-    }
+    }else {
+    this.toastr.error(!this.rtlDir?`Please fill in all fields `:`من فضلك املأ جميع الحقول` )
+  }
   }
 }

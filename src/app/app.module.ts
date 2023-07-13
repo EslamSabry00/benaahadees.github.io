@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {RouterOutlet} from "@angular/router";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     RouterOutlet,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
