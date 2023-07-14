@@ -1,8 +1,8 @@
 <section class="head-sec">
   <div class="layer">
     <div class="container head-sec-content">
-      <h1 class="fw-normal text-white">CONTACT US</h1>
-      <P class="fs-4">GOT A QUESTION OR CONCERN? LET'S GET IN TOUCH.</P>
+      <h1 class="fw-normal text-white">{{"contact.head" | translate | uppercase}}</h1>
+      <P class="fs-4">{{"contact.p" | translate | uppercase}}</P>
     </div>
   </div>
 </section>
@@ -15,28 +15,36 @@
       <div class="col-md-6 mb-5">
         <div class="contact-item mb-5">
           <h2 class="mb-4 fw-normal fs-1">
-            HIRE US TODAY
+            {{"contact.formh" | translate | uppercase}}
           </h2>
           <P class="fs-5 fw-lighter">
-            NO PROJECT IS TOO SMALL FOR RENOVATION
+            {{"contact.formp" | translate | uppercase}}
           </P>
         </div>
         <div>
           <form class="w-75" (ngSubmit)="sendEmail()" [formGroup]="emailForm">
             <div class="mb-3">
-              <input type="text" class="form-control" id="name" placeholder="Your Name" formControlName="name">
+              <input type="text" class="form-control" id="name" placeholder='{{"contact.form1" | translate }}' formControlName="name"
+                     [ngClass]="{ 'invalid-input': emailForm.controls['name'].invalid && (emailForm.controls['name'].dirty || emailForm.controls['name'].touched) }"
+              >
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" id="email" placeholder="Your E-mail" formControlName="email">
+              <input type="email" class="form-control" id="email" placeholder='{{"contact.form2" | translate }}' formControlName="email"
+                     [ngClass]="{ 'invalid-input': emailForm.controls['email'].invalid && (emailForm.controls['email'].dirty || emailForm.controls['email'].touched) }"
+              >
             </div>
             <div class="mb-3">
-              <input type="text" class="form-control" id="subject" placeholder="Subject" formControlName="subject">
+              <input type="text" class="form-control" id="subject" placeholder='{{"contact.form3" | translate }}' formControlName="subject"
+                     [ngClass]="{ 'invalid-input': emailForm.controls['subject'].invalid && (emailForm.controls['subject'].dirty || emailForm.controls['subject'].touched) }"
+              >
             </div>
             <div class="mb-3">
-              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" formControlName="message"></textarea>
+              <textarea class="form-control" id="message" rows="5" placeholder='{{"contact.form4" | translate }}' formControlName="message"
+                        [ngClass]="{ 'invalid-input': emailForm.controls['message'].invalid && (emailForm.controls['message'].dirty || emailForm.controls['message'].touched) }"
+              ></textarea>
             </div>
             <div class="submit-btn">
-              <button type="submit" class="px-4 py-3 email-btn border-0">Send Message</button>
+              <button type="submit" class="px-4 py-3 email-btn border-0">{{"contact.formbtn" | translate }}</button>
             </div>
           </form>
         </div>
@@ -44,7 +52,7 @@
       <div class="col-md-6">
         <div class="contact-item">
           <h2 class="mb-4 fw-normal fs-3">
-            NEED HELP?
+            {{"contact.p1h" | translate | uppercase}}
           </h2>
           <P>
             I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing contact@your-website.com elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -52,7 +60,7 @@
         </div>
         <div class="contact-item">
           <h2 class="mb-4 fw-normal fs-3">
-            24/7 CUSTOMER SUPPORT
+            {{"contact.p2h" | translate | uppercase}}
           </h2>
           <P>
             I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing contact@your-website.com elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -60,10 +68,10 @@
         </div>
         <div class="contact-item">
           <P class="fs-5 fw-lighter">
-          Feel free to contact us
+            {{"contact.phoneh" | translate | uppercase}}
           </P>
-          <h2 class="mb-4 fs-2">
-            0131131844553
+          <h2 class="mb-4 fs-2 ">
+            <a dir="ltr" class="text-decoration-none text-dark" href="tel:+201004652340">+20 100 465 2340</a>
           </h2>
         </div>
       </div>

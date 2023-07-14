@@ -4,5 +4,49 @@
   "nav1" : "Home",
   "nav2" : "Services",
   "nav3" : "Projects",
-  "nav4" : "Contact Us"
+  "nav4" : "Contact Us",
+  "home" : {
+    "slider1": "View Projects",
+    "slider2": "Contact Us",
+    "slide2p" : "Feel Free to contact us anytime to help you",
+    "slide3p" : "can help in any type of projects",
+    "sec2" : {
+      "head" : "our services",
+      "p" : "years of experience"
+    },
+    "sec3" : {
+     "head" : "featured work",
+      "p" : "we take pride in our work"
+    }
+  },
+  "footer" : {
+    "contacth" : "WE CAN HELP BUILD YOUR PROJECT!",
+    "contactp" : "TELL US ABOUT YOUR PROJECT",
+    "li1" : "Address",
+    "li2" : "Phone",
+    "li3" : "Email",
+    "li4" : "Follow us"
+  },
+  "services" : {
+    "head" : "services",
+    "p" : "WE ARE A TEAM OF HIGHLY SKILLED PROFESSIONALS"
+  },
+  "projects" : {
+    "head" : "PROJECTS",
+    "p" : "Witness the remarkable results of our completed construction endeavor"
+  },
+  "contact" : {
+    "head" : "contact us",
+    "p" : "GOT A QUESTION OR CONCERN? LET'S GET IN TOUCH.",
+    "formh" : "HIRE US TODAY",
+    "formp" : "NO PROJECT IS TOO SMALL FOR RENOVATION",
+    "form1" : "Your Name",
+    "form2" : "Your Email",
+    "form3" : "Your Phone",
+    "form4" : "Your Message",
+    "formbtn" : "Send Message",
+    "p1h" : "Our Mission",
+    "p2h" : "Our Vision",
+    "phoneh" : "feel free to contact us"
+  }
 }

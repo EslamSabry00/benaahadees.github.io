@@ -31,7 +31,6 @@ export class NavbarComponent implements OnInit{
     }else{
       this._dataService.rtlDir.next(false);
     }
-    console.log(this._dataService.rtlDir);
   }
 
   getRtlVal(){

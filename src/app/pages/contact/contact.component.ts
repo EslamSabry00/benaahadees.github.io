@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit{
     this.getRtlVal();
     this.emailForm = this.formBuilder.group({
       name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
+      email: [''],
       subject: ['', Validators.required],
       message: ['', Validators.required]
     });
@@ -69,6 +69,7 @@ export class ContactComponent implements OnInit{
           }
       })
     }else {
+      console.log(this.emailForm)
     this.toastr.error(!this.rtlDir?`Please fill in all fields `:`من فضلك املأ جميع الحقول` )
   }
   }
