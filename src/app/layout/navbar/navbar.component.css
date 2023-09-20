@@ -29,9 +29,9 @@ nav {
 }
 .navbar-brand {
   z-index: 999999;
-  position: absolute;
-  height: 250px;
-  width: 250px;
+  /* position: absolute; */
+  height: 100px;
+  width: 200px;
   text-align: center;
   top: 5px;
   left: 0;

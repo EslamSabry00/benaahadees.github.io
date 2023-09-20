@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit{
 
   customOptions: OwlOptions = {
     rtl: false,
-    autoplay: true,
+    autoplay: false,
     loop: true,
     mouseDrag: true,
     touchDrag: true,
@@ -53,7 +53,7 @@ export class HomeComponent implements OnInit{
           this.rtlDir = true;
           this.customOptions= {
             rtl: true,
-            autoplay: true,
+            autoplay: false,
             loop: true,
             mouseDrag: true,
             touchDrag: true,
